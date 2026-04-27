@@ -43,8 +43,33 @@ h3 { font-size: 1.2rem; margin-top: 1.25rem; }
 
 main p { margin: 0.9rem 0; }
 
-/* === HERO underline === */
-h1 + p { font-size: 1.15rem; color: var(--text-muted); max-width: 600px; }
+/* === HERO 2-column === */
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 1.5rem 0 2rem;
+}
+.hero-text h1 { margin-top: 0; }
+.hero-text p { font-size: 1.1rem; color: var(--text-muted); max-width: 540px; }
+.hero-text p strong { color: var(--text-color); }
+.hero-mockup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-mockup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(27,58,92,0.18), 0 4px 12px rgba(0,0,0,0.08);
+  transform: rotate(-2deg);
+}
+
+/* fallback when no .hero wrapper used (for posts) */
+h1 + p { font-size: 1.05rem; color: var(--text-muted); max-width: 640px; }
 
 /* === Fact strip === */
 .fact-strip {
@@ -157,11 +182,40 @@ blockquote {
 
 code { background: var(--bg-soft); padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
 
-/* === Footer === */
-footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
+/* === Trust footer (3-column) === */
+.trust-footer {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 2rem;
+  margin: 4rem 0 1rem;
+  padding-top: 2rem;
   border-top: 1px solid #e6e8eb;
+}
+.trust-footer h4 {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  color: var(--brand-navy);
+  margin: 0 0 0.6rem;
+}
+.trust-footer p { font-size: 0.9rem; color: var(--text-muted); margin: 0.3rem 0; line-height: 1.5; }
+.trust-footer ul { list-style: none; padding: 0; margin: 0; }
+.trust-footer li { font-size: 0.9rem; color: var(--text-muted); margin: 0.3rem 0; }
+.trust-footer li a { color: var(--text-muted); }
+.trust-footer li a:hover { color: var(--brand-gold); }
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 1rem 0 0;
+  padding-bottom: 1rem;
+}
+
+/* === Theme footer (Hugo template footer) === */
+footer {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
   font-size: 0.85rem;
   color: var(--text-muted);
 }
@@ -171,9 +225,13 @@ footer {
   body { padding: 1rem; font-size: 17px; }
   h1 { font-size: 2rem; }
   h2 { font-size: 1.4rem; margin-top: 2rem; }
+  .hero { grid-template-columns: 1fr; gap: 1.25rem; }
+  .hero-mockup { order: -1; }
+  .hero-mockup img { max-width: 60%; }
   .fact-strip { grid-template-columns: 1fr 1fr; gap: 0.75rem; padding: 1rem; }
   .fact-strip strong { font-size: 1.3rem; }
   .kit-grid { grid-template-columns: 1fr; }
   .kit-card .cover { aspect-ratio: 16/10; }
+  .trust-footer { grid-template-columns: 1fr; gap: 1.5rem; }
   header nav a { display: inline-block; margin-right: 0.7rem; margin-bottom: 0.3rem; }
 }
