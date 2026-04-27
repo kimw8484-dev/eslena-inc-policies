@@ -32,10 +32,12 @@ h1, h2, h3, h4, h5, h6 { color: #1B3A5C !important; }
 strong, b { color: #1d2129 !important; font-weight: 700; }
 a, a:visited { color: #1B3A5C !important; }
 a:hover { color: #C8962E !important; }
-/* button-style links: white text on navy bg, must beat the !important above */
-.lead-magnet .btn,
-.lead-magnet .btn:visited,
-.lead-magnet .btn:hover { color: #ffffff !important; }
+/* All button-style links: white text on navy bg, always */
+a.btn,
+a.btn:link,
+a.btn:visited,
+a.btn:hover,
+a.btn:active { color: #ffffff !important; }
 blockquote { color: #555 !important; }
 
 * { box-sizing: border-box; }
@@ -181,17 +183,19 @@ h1 + p { font-size: 1.05rem; color: var(--text-muted); max-width: 640px; }
 }
 .lead-magnet h3 { margin: 0 0 0.4rem; font-size: 1.25rem; }
 .lead-magnet p { margin: 0 0 1rem; color: var(--text-muted); font-size: 1rem; }
+a.btn,
 .lead-magnet .btn {
   display: inline-block;
   background: var(--brand-navy);
-  color: #fff;
+  color: #ffffff;
   padding: 0.7rem 1.5rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
 }
-.lead-magnet .btn:hover { background: var(--brand-navy-dark); color: #fff; }
+a.btn:hover,
+.lead-magnet .btn:hover { background: var(--brand-navy-dark); color: #ffffff; }
 
 /* === Tables === */
 table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
