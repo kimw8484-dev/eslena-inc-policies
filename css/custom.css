@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5, h6 { color: #1B3A5C !important; }
 strong, b { color: #1d2129 !important; font-weight: 700; }
 a, a:visited { color: #1B3A5C !important; }
 a:hover { color: #C8962E !important; }
+/* button-style links: white text on navy bg, must beat the !important above */
+.lead-magnet .btn,
+.lead-magnet .btn:visited,
+.lead-magnet .btn:hover { color: #ffffff !important; }
 blockquote { color: #555 !important; }
 
 * { box-sizing: border-box; }
