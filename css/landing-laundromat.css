@@ -1,4 +1,5 @@
-/* Laundromat — Authoritative, data-driven (Wall Street Journal mood) */
+/* Laundromat — Authoritative, data-driven (Wall Street Journal mood)
+   Designer rebalance: gold → accent only; white/cream tints for large surfaces */
 html.landing.landing--laundromat {
   --primary: #1E2761;
   --primary-deep: #122840;
@@ -17,4 +18,16 @@ html.landing.landing--laundromat {
   --cta-glow: 0 0 0 4px rgba(200, 169, 81, 0.18);
   --radius: 4px;
   --radius-card: 4px;
+
+  /* Rebalance tokens (large surfaces white/cream, gold as accent) */
+  --mid-cta-bg: #FFFFFF;
+  --mid-cta-text: #1E2761;
+  --mid-cta-accent-border: #C8A951;
+  --mid-cta-button-bg: #C8A951;
+  --mid-cta-button-text: #1E2761;
+  --leadmagnet-bg: #F8F6F0;
+  --leadmagnet-text: #1E2761;
+  --leadmagnet-accent: #C8A951;
+  --leadmagnet-button-bg: #1E2761;
+  --leadmagnet-button-text: #FFFFFF;
 }

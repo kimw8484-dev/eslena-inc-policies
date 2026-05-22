@@ -1,14 +1,15 @@
-/* Trucking — Bold, masculine, road-tested (Top Gear mood) */
+/* Trucking — Bold, masculine, road-tested (Top Gear mood)
+   Designer rebalance: orange → accent only; mid-cta stays dark (carries identity) */
 html.landing.landing--trucking {
   --primary: #0F0F0F;
   --primary-deep: #050505;
   --secondary: #FF6B1A;
   --secondary-deep: #D9530B;
   --accent: #FF6B1A;
-  --ink: #F5F5F5;
-  --paper: #1A1A1A;
-  --bg-soft: #1C1C1C;
-  --text-muted: #B0B0B0;
+  --ink: #0F0F0F;
+  --paper: #FFFFFF;
+  --bg-soft: #FAFAFA;
+  --text-muted: #4A4A4A;
   --hero-text: #FFFFFF;
   --font-display: 'Bebas Neue', 'Oswald', Impact, sans-serif;
   --font-body: 'Roboto', -apple-system, sans-serif;
@@ -17,15 +18,21 @@ html.landing.landing--trucking {
   --cta-glow: 0 0 24px rgba(255, 107, 26, 0.45);
   --radius: 0px;
   --radius-card: 0px;
+
+  /* Rebalance — Trucking keeps dark mid-cta as identity, leadmagnet goes white */
+  --mid-cta-bg: #1A1A1A;
+  --mid-cta-text: #FFFFFF;
+  --mid-cta-accent-border: #FF6B1A;
+  --mid-cta-button-bg: #FF6B1A;
+  --mid-cta-button-text: #0F0F0F;
+  --leadmagnet-bg: #FFFFFF;
+  --leadmagnet-text: #0F0F0F;
+  --leadmagnet-accent: #FF6B1A;
+  --leadmagnet-button-bg: #0F0F0F;
+  --leadmagnet-button-text: #FF6B1A;
 }
 html.landing.landing--trucking h1, html.landing.landing--trucking h2 { text-transform: uppercase; letter-spacing: 0.02em; }
-html.landing.landing--trucking .l-card { background: #1C1C1C; border: 1px solid rgba(255, 107, 26, 0.2); }
-html.landing.landing--trucking .l-card h3 { color: var(--secondary); }
-html.landing.landing--trucking .l-card p { color: #B0B0B0; }
-html.landing.landing--trucking .l-trust, html.landing.landing--trucking .l-leadmagnet { background: #0F0F0F; }
-html.landing.landing--trucking .l-trust__item { color: var(--ink); }
+html.landing.landing--trucking .l-persona__col { background: #FAFAFA; }
+html.landing.landing--trucking .l-card { border: 1px solid rgba(255, 107, 26, 0.15); }
+html.landing.landing--trucking .l-card h3 { color: var(--primary); }
 html.landing.landing--trucking .l-trust__item strong { color: var(--secondary); }
-html.landing.landing--trucking .l-section--alt { background: #151515; }
-html.landing.landing--trucking .l-leadmagnet__card { background: #1C1C1C; color: var(--ink); border: 2px solid var(--secondary); }
-html.landing.landing--trucking .l-leadmagnet__card h2 { color: var(--secondary); }
-html.landing.landing--trucking .l-leadmagnet__form input { background: #0F0F0F; color: var(--ink); border-color: var(--secondary); }

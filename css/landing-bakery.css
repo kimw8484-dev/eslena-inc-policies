@@ -1,4 +1,5 @@
-/* Bakery — Artisanal, warm, lifestyle (Bon Appétit mood) */
+/* Bakery — Artisanal, warm, lifestyle (Bon Appétit mood)
+   Designer rebalance: cream lifted to #FAF3E8 (less yellow), terracotta accent strengthened */
 html.landing.landing--bakery {
   --primary: #B85042;
   --primary-deep: #94372C;
@@ -6,7 +7,7 @@ html.landing.landing--bakery {
   --secondary-deep: #E8D2B5;
   --accent: #6B4423;
   --accent-deep: #4A2F18;
-  --ink: #2A1810;
+  --ink: #2D1A14;
   --paper: #FBF5EC;
   --bg-soft: #F4EAD9;
   --text-muted: #6B5448;
@@ -18,8 +19,17 @@ html.landing.landing--bakery {
   --cta-glow: 0 0 0 4px rgba(184, 80, 66, 0.22);
   --radius: 4px;
   --radius-card: 4px;
+
+  /* Rebalance — cream lifted, leadmagnet white, terracotta accent */
+  --mid-cta-bg: #FAF3E8;
+  --mid-cta-text: #2D1A14;
+  --mid-cta-accent-border: #B85042;
+  --mid-cta-button-bg: #B85042;
+  --mid-cta-button-text: #FFFFFF;
+  --leadmagnet-bg: #FFFFFF;
+  --leadmagnet-text: #2D1A14;
+  --leadmagnet-accent: #B85042;
+  --leadmagnet-button-bg: #B85042;
+  --leadmagnet-button-text: #FFFFFF;
 }
-html.landing.landing--bakery .btn--primary { background: var(--accent); color: var(--secondary); }
-html.landing.landing--bakery .l-mid-cta { background: var(--accent); color: var(--secondary); }
-html.landing.landing--bakery .l-mid-cta h2 { color: var(--secondary); }
-html.landing.landing--bakery .l-mid-cta .btn--accent { background: var(--primary); color: var(--secondary); }
+html.landing.landing--bakery .l-persona__col { background: #FAF3E8; }

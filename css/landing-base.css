@@ -165,32 +165,48 @@ html.landing main {
 .l-num__big { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; color: var(--secondary); display: block; line-height: 1.1; }
 .l-num__label { font-size: 0.88rem; opacity: .8; margin-top: 6px; display: block; }
 
-/* ----- Mid CTA strip ----- */
+/* ----- Mid CTA strip — secondary as accent only, not background ----- */
 .l-mid-cta {
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--mid-cta-bg, var(--paper));
+  color: var(--mid-cta-text, var(--ink));
   text-align: center;
   padding: 48px 0;
+  border-left: 4px solid var(--mid-cta-accent-border, var(--secondary));
 }
-.l-mid-cta h2 { color: var(--primary); margin-bottom: 16px; }
-.l-mid-cta .btn--accent { background: var(--primary); color: var(--secondary); }
+.l-mid-cta h2 { color: var(--mid-cta-text, var(--ink)); margin-bottom: 16px; }
+.l-mid-cta .btn--accent {
+  background: var(--mid-cta-button-bg, var(--secondary));
+  color: var(--mid-cta-button-text, var(--primary));
+}
 
-/* ----- Lead magnet ----- */
+/* ----- Lead magnet — sober tint instead of full secondary fill ----- */
 .l-leadmagnet { padding: 80px 0; background: var(--paper); }
 .l-leadmagnet__card {
   max-width: 640px; margin: 0 auto; padding: 40px;
   border-radius: var(--radius-card, 12px);
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--leadmagnet-bg, var(--paper));
+  color: var(--leadmagnet-text, var(--ink));
   text-align: center;
   box-shadow: var(--mood-shadow);
+  border-top: 3px solid var(--leadmagnet-accent, var(--secondary));
 }
-.l-leadmagnet__card h2 { color: var(--primary); margin-bottom: 8px; }
+.l-leadmagnet__card h2 {
+  color: var(--leadmagnet-text, var(--ink));
+  margin-bottom: 8px;
+  display: inline-block;
+  border-bottom: 2px solid var(--leadmagnet-accent, var(--secondary));
+  padding-bottom: 6px;
+}
 .l-leadmagnet__form { display: flex; gap: 8px; margin-top: 20px; }
 @media (max-width: 560px) { .l-leadmagnet__form { flex-direction: column; } }
 .l-leadmagnet__form input {
-  flex: 1; padding: 16px 18px; font-size: 1rem; border: 2px solid var(--primary);
+  flex: 1; padding: 16px 18px; font-size: 1rem;
+  border: 2px solid var(--leadmagnet-accent, var(--secondary));
   border-radius: var(--radius, 6px); background: var(--paper); color: var(--ink);
+}
+.l-leadmagnet__card .btn--accent {
+  background: var(--leadmagnet-button-bg, var(--accent));
+  color: var(--leadmagnet-button-text, var(--paper));
 }
 
 /* ----- Etsy CTA main ----- */

@@ -1,11 +1,12 @@
-/* Daycare — Warm, nurturing, soft (Magnolia journal mood) */
+/* Daycare — Warm, nurturing, soft (Magnolia journal mood)
+   Designer rebalance: pink/yellow → 3% tints + pink accent only */
 html.landing.landing--daycare {
   --primary: #E89AAB;
   --primary-deep: #D17F92;
   --secondary: #FFE5A0;
   --secondary-deep: #F5D173;
   --accent: #5B7C99;
-  --ink: #3A2C33;
+  --ink: #3D2530;
   --paper: #FFFAF6;
   --bg-soft: #FDF3F0;
   --text-muted: #6F5F66;
@@ -17,9 +18,20 @@ html.landing.landing--daycare {
   --cta-glow: 0 0 0 6px rgba(91, 124, 153, 0.14);
   --radius: 20px;
   --radius-card: 16px;
+
+  /* Rebalance — 3% tints, pink accent only */
+  --mid-cta-bg: #FFF7F9;
+  --mid-cta-text: #3D2530;
+  --mid-cta-accent-border: #E89AAB;
+  --mid-cta-button-bg: #E89AAB;
+  --mid-cta-button-text: #FFFFFF;
+  --leadmagnet-bg: #FFFBF0;
+  --leadmagnet-text: #3D2530;
+  --leadmagnet-accent: #E89AAB;
+  --leadmagnet-button-bg: #E89AAB;
+  --leadmagnet-button-text: #FFFFFF;
 }
 html.landing.landing--daycare .l-numbers { background: var(--accent); }
 html.landing.landing--daycare .l-numbers .l-num__big { color: var(--secondary); }
 html.landing.landing--daycare .btn--primary { background: var(--accent); color: var(--paper); }
-html.landing.landing--daycare .btn--accent { background: var(--accent); }
-html.landing.landing--daycare .l-mid-cta .btn--accent { background: var(--accent); color: var(--paper); }
+html.landing.landing--daycare .l-persona__col { background: #FFF7F9; }

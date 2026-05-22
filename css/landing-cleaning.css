@@ -1,4 +1,5 @@
-/* Cleaning — Fresh, practical, immediate (SaaS dashboard mood) */
+/* Cleaning — Fresh, practical, immediate (SaaS dashboard mood)
+   Designer rebalance: teal → accent only; large surfaces white or 5% tint */
 html.landing.landing--cleaning {
   --primary: #009488;
   --primary-deep: #007770;
@@ -17,8 +18,17 @@ html.landing.landing--cleaning {
   --cta-glow: 0 0 0 4px rgba(0, 180, 166, 0.22);
   --radius: 6px;
   --radius-card: 6px;
+
+  /* Rebalance — white surfaces + teal accent */
+  --mid-cta-bg: #FFFFFF;
+  --mid-cta-text: #0A3D3A;
+  --mid-cta-accent-border: #009488;
+  --mid-cta-button-bg: #009488;
+  --mid-cta-button-text: #FFFFFF;
+  --leadmagnet-bg: #F0F8F7;
+  --leadmagnet-text: #0A3D3A;
+  --leadmagnet-accent: #009488;
+  --leadmagnet-button-bg: #009488;
+  --leadmagnet-button-text: #FFFFFF;
 }
-html.landing.landing--cleaning .btn--primary { background: var(--accent); color: var(--secondary); }
-html.landing.landing--cleaning .l-mid-cta { background: var(--accent); color: var(--secondary); }
-html.landing.landing--cleaning .l-mid-cta h2 { color: var(--secondary); }
-html.landing.landing--cleaning .l-mid-cta .btn--accent { background: var(--primary); color: var(--secondary); }
+html.landing.landing--cleaning .btn--primary { background: var(--accent); color: #FFFFFF; }
