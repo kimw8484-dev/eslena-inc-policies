@@ -1,0 +1,25 @@
+/* Daycare — Warm, nurturing, soft (Magnolia journal mood) */
+html.landing.landing--daycare {
+  --primary: #E89AAB;
+  --primary-deep: #D17F92;
+  --secondary: #FFE5A0;
+  --secondary-deep: #F5D173;
+  --accent: #5B7C99;
+  --ink: #3A2C33;
+  --paper: #FFFAF6;
+  --bg-soft: #FDF3F0;
+  --text-muted: #6F5F66;
+  --hero-text: #3A2C33;
+  --font-display: 'Quicksand', -apple-system, sans-serif;
+  --font-body: 'Nunito', sans-serif;
+  --mood-shadow: 0 6px 20px rgba(244, 181, 196, 0.25), 0 20px 50px rgba(91, 124, 153, 0.08);
+  --mood-gradient: linear-gradient(160deg, #F4B5C4 0%, #FFE5A0 100%);
+  --cta-glow: 0 0 0 6px rgba(91, 124, 153, 0.14);
+  --radius: 20px;
+  --radius-card: 16px;
+}
+html.landing.landing--daycare .l-numbers { background: var(--accent); }
+html.landing.landing--daycare .l-numbers .l-num__big { color: var(--secondary); }
+html.landing.landing--daycare .btn--primary { background: var(--accent); color: var(--paper); }
+html.landing.landing--daycare .btn--accent { background: var(--accent); }
+html.landing.landing--daycare .l-mid-cta .btn--accent { background: var(--accent); color: var(--paper); }

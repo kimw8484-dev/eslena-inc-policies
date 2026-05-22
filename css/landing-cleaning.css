@@ -1,0 +1,24 @@
+/* Cleaning — Fresh, practical, immediate (SaaS dashboard mood) */
+html.landing.landing--cleaning {
+  --primary: #009488;
+  --primary-deep: #007770;
+  --secondary: #FFFFFF;
+  --accent: #1A1A2E;
+  --accent-soft: #2A2A40;
+  --ink: #0D0D17;
+  --paper: #F7FBFA;
+  --bg-soft: #EAF6F4;
+  --text-muted: #4F5B6B;
+  --hero-text: #FFFFFF;
+  --font-display: 'Montserrat', -apple-system, sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --mood-shadow: 0 4px 12px rgba(0, 180, 166, 0.10), 0 12px 32px rgba(26, 26, 46, 0.08);
+  --mood-gradient: linear-gradient(120deg, #00B4A6 0%, #008C81 100%);
+  --cta-glow: 0 0 0 4px rgba(0, 180, 166, 0.22);
+  --radius: 6px;
+  --radius-card: 6px;
+}
+html.landing.landing--cleaning .btn--primary { background: var(--accent); color: var(--secondary); }
+html.landing.landing--cleaning .l-mid-cta { background: var(--accent); color: var(--secondary); }
+html.landing.landing--cleaning .l-mid-cta h2 { color: var(--secondary); }
+html.landing.landing--cleaning .l-mid-cta .btn--accent { background: var(--primary); color: var(--secondary); }

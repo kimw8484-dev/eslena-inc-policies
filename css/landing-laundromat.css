@@ -1,0 +1,20 @@
+/* Laundromat — Authoritative, data-driven (Wall Street Journal mood) */
+html.landing.landing--laundromat {
+  --primary: #1E2761;
+  --primary-deep: #122840;
+  --secondary: #C8A951;
+  --secondary-bright: #E0BD5D;
+  --accent: #122840;
+  --ink: #0A1428;
+  --paper: #FAFAF7;
+  --bg-soft: #F2F2EC;
+  --text-muted: #555;
+  --hero-text: #FFFFFF;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --mood-shadow: 0 8px 24px rgba(30, 39, 97, 0.12), 0 24px 60px rgba(30, 39, 97, 0.06);
+  --mood-gradient: linear-gradient(135deg, #1E2761 0%, #122840 100%);
+  --cta-glow: 0 0 0 4px rgba(200, 169, 81, 0.18);
+  --radius: 4px;
+  --radius-card: 4px;
+}
