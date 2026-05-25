@@ -395,7 +395,7 @@ footer {
 .kit-card-v2 .media {
   position: relative;
   width: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 1 / 1;
   background: var(--brand-navy);
   overflow: hidden;
 }
@@ -537,21 +537,53 @@ footer {
   .kit-grid-v2 { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ---- Mobile (< 720px) ---- */
+/* ---- Mobile (< 720px) — show all 5 fanout covers + bump font sizes ---- */
 @media (max-width: 720px) {
   .hero-v2 { grid-template-columns: 1fr; gap: 1.5rem; }
-  .hero-fanout { min-height: 320px; }
-  .hero-fanout .cover { width: 150px; }
-  .hero-fanout .cover:nth-child(1),
-  .hero-fanout .cover:nth-child(5) { display: none; }
-  .hero-fanout .cover:nth-child(2) { transform: translateX(-65px) rotate(-5deg); }
-  .hero-fanout .cover:nth-child(4) { transform: translateX(65px) rotate(5deg); }
+  .hero-v2-text h1 { font-size: 2.1rem; line-height: 1.18; }
+  .hero-v2-text .sub { font-size: 1.05rem; line-height: 1.55; }
+  .hero-v2-cta .btn { padding: 0.95rem 1.4rem; font-size: 1rem; }
 
-  .fact-strip-v2 { grid-template-columns: repeat(2, 1fr); padding: 1.2rem; }
-  .fact-strip-v2 strong { font-size: 1.3rem; }
+  /* Show ALL 5 covers on mobile (compressed width + tighter translate) */
+  .hero-fanout { min-height: 340px; }
+  .hero-fanout .cover { width: 130px; }
+  .hero-fanout .cover:nth-child(1) { transform: translateX(-130px) rotate(-9deg); opacity: 0.78; z-index: 1; display: block; }
+  .hero-fanout .cover:nth-child(2) { transform: translateX(-65px) rotate(-5deg); opacity: 0.9; z-index: 2; }
+  .hero-fanout .cover:nth-child(3) { transform: translateX(0) rotate(0deg); z-index: 3; }
+  .hero-fanout .cover:nth-child(4) { transform: translateX(65px) rotate(5deg); opacity: 0.9; z-index: 2; }
+  .hero-fanout .cover:nth-child(5) { transform: translateX(130px) rotate(9deg); opacity: 0.78; z-index: 1; display: block; }
+
+  .fact-strip-v2 { grid-template-columns: repeat(2, 1fr); padding: 1.5rem 1rem; gap: 1.2rem; }
+  .fact-strip-v2 strong { font-size: 1.7rem; }
+  .fact-strip-v2 span { font-size: 0.9rem; }
 
   .how-it-works { grid-template-columns: 1fr; gap: 0.75rem; }
+  .how-step { padding: 1.2rem 1rem; }
+  .how-step .num { font-size: 2.8rem; }
+  .how-step h4 { font-size: 1.3rem; }
+  .how-step p { font-size: 1rem; line-height: 1.55; }
+
   .kit-grid-v2 { grid-template-columns: 1fr; }
+  .kit-card-v2 .body { padding: 1.2rem 1.2rem 1.4rem; }
+  .kit-card-v2 .cat-name { font-size: 1.5rem; }
+  .kit-card-v2 .cat-sub { font-size: 1rem; }
+  .kit-card-v2 .stat-1 { font-size: 0.98rem; }
+  .kit-card-v2 .stat-2 { font-size: 1.05rem; }
+  .kit-card-v2 .price-old { font-size: 1rem; }
+  .kit-card-v2 .price-new { font-size: 1.25rem; }
+  .kit-card-v2 .btn-etsy,
+  .kit-card-v2 .btn-learn { padding: 0.8rem 1rem; font-size: 1rem; }
+
   .why-us { grid-template-columns: 1fr; }
+  .why-col h4 { font-size: 1.25rem; }
+  .why-col p { font-size: 1rem; line-height: 1.55; }
+
   .blog-teaser { grid-template-columns: 1fr; }
+  .blog-teaser-card h4 { font-size: 1.2rem; }
+  .blog-teaser-card p { font-size: 0.98rem; line-height: 1.55; }
+  .blog-teaser-card .tag { font-size: 0.78rem; }
+
+  h2 { font-size: 1.7rem !important; }
+  .lead-magnet h3 { font-size: 1.45rem; }
+  .lead-magnet p { font-size: 1.02rem; line-height: 1.55; }
 }
