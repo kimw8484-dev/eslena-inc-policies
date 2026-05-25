@@ -305,13 +305,11 @@ footer {
   color: #ffffff !important;
   border: 2px solid var(--brand-navy);
 }
-.hero-v2-cta .btn-primary:hover { background: var(--brand-navy-dark); border-color: var(--brand-navy-dark); }
 .hero-v2-cta .btn-outline {
-  background: transparent;
-  color: var(--brand-navy) !important;
+  background: var(--brand-navy);
+  color: #ffffff !important;
   border: 2px solid var(--brand-navy);
 }
-.hero-v2-cta .btn-outline:hover { background: var(--brand-navy); color: #ffffff !important; }
 
 .hero-fanout {
   position: relative;
@@ -326,8 +324,8 @@ footer {
   aspect-ratio: 2 / 3;
   border-radius: 6px;
   box-shadow: 0 12px 30px rgba(27, 58, 92, 0.18);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  pointer-events: none;
 }
 .hero-fanout .cover img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block; }
 .hero-fanout .cover:nth-child(1) { transform: translateX(-220px) rotate(-8deg); opacity: 0.85; z-index: 1; }
@@ -335,7 +333,6 @@ footer {
 .hero-fanout .cover:nth-child(3) { transform: translateX(0) rotate(0deg); z-index: 3; }
 .hero-fanout .cover:nth-child(4) { transform: translateX(110px) rotate(4deg); opacity: 0.92; z-index: 2; }
 .hero-fanout .cover:nth-child(5) { transform: translateX(220px) rotate(8deg); opacity: 0.85; z-index: 1; }
-.hero-fanout .cover:hover { transform: scale(1.06) rotate(0); z-index: 10; box-shadow: 0 18px 42px rgba(27, 58, 92, 0.28); }
 
 /* ---- §2 Trust strip 5-col ---- */
 .fact-strip-v2 {
