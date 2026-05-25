@@ -40,8 +40,8 @@ html.landing main {
 
 .landing p { margin: 0 0 1em; }
 
-.landing a { color: var(--accent); text-decoration: none; }
-.landing a:hover { text-decoration: underline; }
+.landing a:not(.btn) { color: var(--accent); text-decoration: none; }
+.landing a:not(.btn):hover { text-decoration: underline; }
 
 .container {
   max-width: 1120px;
