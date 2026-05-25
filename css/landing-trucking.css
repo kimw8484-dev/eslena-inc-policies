@@ -36,3 +36,13 @@ html.landing.landing--trucking .l-persona__col { background: #FAFAFA; }
 html.landing.landing--trucking .l-card { border: 1px solid rgba(255, 107, 26, 0.15); }
 html.landing.landing--trucking .l-card h3 { color: var(--primary); }
 html.landing.landing--trucking .l-trust__item strong { color: var(--secondary); }
+
+/* Hard guarantee: orange buttons always show black text (override any cascade) */
+html.landing.landing--trucking .btn--primary,
+html.landing.landing--trucking .btn--primary span,
+html.landing.landing--trucking .btn--accent,
+html.landing.landing--trucking .btn--accent span,
+html.landing.landing--trucking a.btn,
+html.landing.landing--trucking a.btn span {
+  color: #0F0F0F !important;
+}
