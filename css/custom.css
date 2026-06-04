@@ -649,8 +649,10 @@ footer {
   line-height: 1.55;
   margin: 0 0 1.4rem 0;
 }
-.blog-cta-bottom__inner p strong {
-  color: #FFFFFF;
+.blog-cta-bottom__inner p strong,
+.blog-cta-bottom strong,
+.blog-cta-bottom b {
+  color: #FFFFFF !important;
 }
 .blog-cta-bottom__btn {
   display: inline-block;
